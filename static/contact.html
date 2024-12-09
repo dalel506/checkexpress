@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Coffee Shop Contact</title>
+</head>
+<body>
+<!-- Header Section -->
+<nav class="navbar">
+    <div class="logo-text">SISTER'S COFFEE</div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/services">Our Services</a></li>
+      <li><a href="/contact" class="active">Contact Us</a></li>
+      <li><a href="/about">About Us</a></li>
+    </ul>
+  </nav>
+<!-- Hero Section -->
+<header class="hero-section-contact">
+  <h1>GET IN TOUCH WITH SISTER'S COFFEE</h1>
+  <p>We’d love to hear from you!</p>
+  <p>Email: <a href="mailto:contact@coffeeshop.com">contact@coffeeshop.com</a></p>
+  <p>Address: 123 Coffee Street, Coffee City</p>
+  <p>Phone: (123) 456-7890</p>
+</header>
+<!-- Contact Section -->
+  <section id="contact" class="container-contact">
+    <h1>Contact Us</h1>
+    <p> We’d love to hear from you! Whether you have a question, feedback, or just want to say hello, reach out to us below.</p>
+    <form action="/send-message" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+    <!-- location Section -->
+    <section id="location" class="location">
+          <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.504517890597!2d-122.4182585850425!3d37.77492977975916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808cf4a9e877%3A0xb6a9245c6f60f6d7!2sSan%20Francisco%2C%20CA%2094104!5e0!3m2!1sen!2sus!4v1603892724138!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+      </div>
+  </section>
+<!-- Footer -->
+<footer>
+    <div class="location-info">
+        <p>145 Hudson Street
+            New York, NY, 10013
+            United States</p>
+        <p id="copyright"> Open From Monday To Friday,<br>9:00 ------ 17:00 </p>
+    </div>
+  <p>&copy; 2024 SISTER'S COFFEE. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
